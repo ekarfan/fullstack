@@ -1,7 +1,6 @@
-fullstack-nanodegree-vm
+Log-Analysis-Udacity-Project
 =============
 
-Common code for the Relational Databases and Full Stack Fundamentals courses
 ### Project Description
 >Your task is to create a reporting tool that prints out reports (in plain text) based on the data in the database. This reporting tool is a Python program using the psycopg2 module to connect to the database.
   
