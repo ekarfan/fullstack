@@ -2,7 +2,15 @@ Log-Analysis-Udacity-Project
 =============
 
 ### Project Description
->Your task is to create a reporting tool that prints out reports (in plain text) based on the data in the database. This reporting tool is a Python program using the psycopg2 module to connect to the database.
+>To create a reporting tool that prints out reports (in plain text) based on the data in the database. This reporting tool is a Python program using the psycopg2 module to connect to the database.
+
+#### Introduction
+
+The database contains newspaper articles, as well as the web server log for the site. The log has a database row for each time a reader loaded a web page. The database includes three tables:
+
+The authors table includes information about the authors of articles.
+The articles table includes the articles themselves.
+The log table includes one entry for each time a user has accessed the site.
   
 #### Setting up the database and Creating Views:
 
@@ -13,9 +21,6 @@ Log-Analysis-Udacity-Project
   ```
   2. Use `psql -d news` to connect to database.
   
-  3. Create view numviews_view using:
-  ```
-create view numviews_view as (select title, author, count(*) as num from articles,log where log.path=CONCAT('/article/',articles.slug) group by articles.title,articles.author order by num desc);
   ```
 #### Running the queries:
   Run logs.py using:
