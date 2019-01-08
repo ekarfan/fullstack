@@ -20,9 +20,10 @@ The log table includes one entry for each time a user has accessed the site.
     psql -d news -f newsdata.sql
   ```
   2. Use `psql -d news` to connect to database.
-  
   ```
+
 #### Running the queries:
+
   Run logs.py using:
   ```
     $ python logs.py
