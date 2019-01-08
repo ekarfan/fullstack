@@ -12,7 +12,7 @@ The authors table includes information about the authors of articles.
 The articles table includes the articles themselves.
 The log table includes one entry for each time a user has accessed the site.
   
-#### Setting up the database and Creating Views:
+#### Setting up the database:
 
   1. Load the data in local database using the command:
   
@@ -22,7 +22,7 @@ The log table includes one entry for each time a user has accessed the site.
   2. Use `psql -d news` to connect to database.
   ```
 
-#### Running the queries:
+#### To Run:
 
   Run logs.py using:
   ```
